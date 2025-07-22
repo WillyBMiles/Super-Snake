@@ -43,6 +43,9 @@ export class Start extends Phaser.Scene {
         this.input.keyboard.on('keydown-' + 'A', function (event) { this.snake.move(LEFT) }, this);
 
         this.myGame = new Game(this, this.world, this.snake);
+
+        this.scale.displaySize.setAspectRatio( WIDTH/HEIGHT );
+        this.scale.refresh();
     }
 
     #wasDown = false;

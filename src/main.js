@@ -12,7 +12,10 @@ const config = {
     scene: [
         Start
     ],
-    zoom: 3
+    scale: {
+        mode: Phaser.Scale.FIT,
+    }
+    //zoom: 3
 }
 
 new Phaser.Game(config);
